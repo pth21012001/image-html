@@ -61,7 +61,6 @@ body {
 
 .icon {
 	padding-right: 10px;
-    /*padding-left: 10px;*/
 }
 
 .icon2 {
@@ -174,7 +173,7 @@ body {
 }
 
 .ladies {
-	background-image: url("./images/tittle.jpg");
+	background-image: url("./images/desktop_03_03.jpg");
 	width: 295px;
     height: 176px;
     margin-right: 25px;
@@ -216,7 +215,7 @@ body {
  
 
 .footware {
-	background-image: url("./images/title2.jpg");
+	background-image: url("./images/desktop_05_05.jpg");
 	width: 295px;
     height: 176px;
     margin-right: 40px;
@@ -249,7 +248,7 @@ body {
 } 
 
 .smart {
-	background-image: url("./images/title3.jpg");
+	background-image: url("./images/desktop_07_07.jpg");
 	width: 295px;
     height: 176px;
     display: flex;
@@ -280,12 +279,44 @@ body {
 
 #show {
     background: #e6e9ec;
-    text-align: center;
     width: 100%;
+}
+
+.acc {
+	padding-top: 20px;
+    padding-bottom: 20px;
+    background: white;
+    margin-top: -4px;
+    padding-left: -10px;
+    padding-left: 30px;
+}
+
+
+.casua {
+	padding-top: 20px;
+    padding-bottom: 20px;
+    background: white;
+    margin-top: -4px;
+    padding-left: -10px;
+  	padding-left: 30px;
+    margin-left: 25px;
+}
+
+.casua span,.acc span {
+	color: red;
+}
+
+.casua h4, .acc h4 {
+	margin-bottom: 10px;
+}
+
+.pd {
+	padding-bottom: 35px;
 }
 
 #show h3 {
 	padding-top: 30px;
+	text-align: center;
 }
 
 .show2 {
@@ -298,6 +329,7 @@ body {
     padding-bottom: 50px;
     padding-left: 300px;
 }
+
 
 .tron {
 	display: flex;
@@ -399,7 +431,7 @@ body {
 }
 
 .content h3 {
-	padding-top: 10px;
+	padding-top: 30px;
 	margin-left: 28px;
 	color: #6c6d6e;
 }
@@ -411,17 +443,28 @@ body {
 
 .new {
 	margin-right: 16px;
+	position: relative;
 	border: 1px solid #e6e9ec;
+}
+
+.new span, .new2 span, .new3 span {
+	position: absolute;
+    top: 185px;
+    left: 28px;
+    padding: 10px;
+    color: white;
+    background-color: #fa6161;
 }
 
 .new2 {
 	margin-right: 16px;
+	position: relative;
 	border: 1px solid #e6e9ec;
 }
 
 .new3 {
-	/*margin-right: 16px;*/
 	border: 1px solid #e6e9ec;
+	position: relative;
 }
 
 #home {
@@ -502,7 +545,6 @@ body {
 
 .shipping2 {
 	display: flex;
-	/*align-items: center;*/
 }
 
 .shipping2 p,h5 {
@@ -569,35 +611,39 @@ body {
 @media screen and (min-width: 460px) 
 			  and (max-width: 640px)
 {
-	/*#boy {
-		background-image: url("img/repon.jpg");
-	}
-
-	#container {
-		background-image: url("img/repon2.jpg");
-		height: 535px;
-	}*/
-
 	.Fashion {
-		left: 20px;
-		width: 400px;
-		top: 70px;
-		padding: 10px;
+		left: 54px;
+	    width: 335px;
+	    top: 70px;
+	    padding: 10px;
 	}
 
 	.fashion {
-		padding-bottom: 94px;
+		padding-bottom: 80px;
 	}
 
 	.fashion h3 {
 	    margin-top: 44px;
 	    margin-bottom: 7px;
-	    font-size: 30px;
+	    font-size: 20px;
+	}
+
+	.fashion h2 {
+		font-size: 20px;
 	}
 
 	.tron {
 		margin-left: 129px;
 		justify-content: unset;
+		margin-top: 45px;
+	}
+
+	.rptron {
+		margin-top: 85px;
+	}
+
+	.rp {
+		display: none;
 	}
 
 	.tron4 {
@@ -622,7 +668,6 @@ body {
 
 	.inline2 {
 		display: block;
-		/*margin-left: 35px;*/
 		padding-left: 0px;
 	}
 
@@ -704,7 +749,6 @@ body {
 
 	#home img {
     	padding-left: 0px;
-    	margin-left: -263px;
 	}
 
 	#footer {
@@ -780,6 +824,9 @@ body {
 
 	.sub {
 		margin-bottom: 50px;
+		text-align: center;
+		margin-left: 0px;
+    	margin-right: 0px; 
 	}
 
 	.us {
@@ -788,5 +835,14 @@ body {
 
 	.shipping {
 		margin-bottom: 50px;
+		margin-right: 19px;
+	}
+
+	.new, .new2, .new3 {
+		border: 0px;
+	}
+
+	.new span, .new2 span, .new3 span {
+		left: 110px;
 	}
 }
