@@ -5,25 +5,26 @@
 	<link rel="stylesheet" type="text/css" href="bai2.css">
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="bai2.js"></script>
+	<script type="text/javascript" src="hieuungHeader.js"></script>
 	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body>
+<body id="demo">
 <!--PHAN 1-->	
 	<div id="container">
 		<div class="gobars">
 			<div class="title">
-				<a href="#"><span>GO BARS</span></a>
+				<a href="#demo" onclick="goBar()"><span>GO BARS</span></a>
 			</div>
 
 			<div class="menu">
-				<div><a href="#" style="color: #F2D5CE">HOME</a></div>
-				<div><a href="#">SHOP</a></div>
-				<div><a href="#">ABOUT</a></div>
-				<div><a href="#">WHERE TO BUY</a></div>
-				<div><a href="#">GH</a></div>
+				<div><a href="#demo" style="color: #F2D5CE" onclick="goBar()">HOME</a></div>
+				<div><a href="#hienShop" onclick="shop()">SHOP</a></div>
+				<div><a href="">ABOUT</a></div>
+				<div><a href="">WHERE TO BUY</a></div>
+				<div><a href="">GH</a></div>
 			</div>
 		</div>	
 
@@ -67,7 +68,7 @@
 	</div>
 
 <!--PHAN 3-->
-	<div class="slide2">
+	<div id="slide2">
 		<div>
 			<div class="our">			
 				<h5>Our Products</h5>
@@ -201,135 +202,13 @@
 			    	</div>
 			    </li>
 			</ul>
-			<div class="clearout"></div>   
+			<div class="clearout"></div> 
+
+	</script>  
 		</div>
+
+
 	</div>
-	
-	<script type="text/javascript">
-		$(window).load(function() {
-    		$("#flexiselDemo1").flexisel();
-    		//1//
-    		$(".li1").mouseenter(function()
-			{
-				$(".anh1").attr({"src": "./img/anh2.webp"});
-			});
-
-			$(".li1").mouseleave(function()
-			{
-				$(".anh1").attr({"src": "./img/anh1.webp"});
-			});
-			//2//
-			$(".li2").mouseenter(function()
-			{
-				$(".anh2").attr({"src": "./img/anh4.webp"});
-			});
-
-			$(".li2").mouseleave(function()
-			{
-				$(".anh2").attr({"src": "./img/anh3.webp"});
-			});
-			//3//
-			$(".li3").mouseenter(function()
-			{
-				$(".anh3").attr({"src": "./img/anh6.webp"});
-			});
-
-			$(".li3").mouseleave(function()
-			{
-				$(".anh3").attr({"src": "./img/anh5.webp"});
-			});
-			//4//
-			$(".li4").mouseenter(function()
-			{
-				$(".anh4").attr({"src": "./img/anh8.webp"});
-			});
-
-			$(".li4").mouseleave(function()
-			{
-				$(".anh4").attr({"src": "./img/anh7.webp"});
-			});
-			//5//
-			$(".li5").mouseenter(function()
-			{
-				$(".anh5").attr({"src": "./img/anh10.webp"});
-			});
-
-			$(".li5").mouseleave(function()
-			{
-				$(".anh5").attr({"src": "./img/anh9.webp"});
-			});
-			//6//
-			$(".li6").mouseenter(function()
-			{
-				$(".anh6").attr({"src": "./img/anh12.webp"});
-			});
-
-			$(".li6").mouseleave(function()
-			{
-				$(".anh6").attr({"src": "./img/anh11.webp"});
-			});
-			//7//
-    		$(".li7").mouseenter(function()
-			{
-				$(".anh7").attr({"src": "./img/anh14.webp"});
-			});
-
-			$(".li7").mouseleave(function()
-			{
-				$(".anh7").attr({"src": "./img/anh13.webp"});
-			});
-			//8//
-			$(".li8").mouseenter(function()
-			{
-				$(".anh8").attr({"src": "./img/anh16.webp"});
-			});
-
-			$(".li8").mouseleave(function()
-			{
-				$(".anh8").attr({"src": "./img/anh15.webp"});
-			});
-			//9//
-			$(".li9").mouseenter(function()
-			{
-				$(".anh9").attr({"src": "./img/anh18.webp"});
-			});
-
-			$(".li9").mouseleave(function()
-			{
-				$(".anh9").attr({"src": "./img/anh17.webp"});
-			});
-			//10//
-			$(".li10").mouseenter(function()
-			{
-				$(".anh10").attr({"src": "./img/anh20.webp"});
-			});
-
-			$(".li10").mouseleave(function()
-			{
-				$(".anh10").attr({"src": "./img/anh19.webp"});
-			});
-			//11//
-			$(".li11").mouseenter(function()
-			{
-				$(".anh11").attr({"src": "./img/anh22.webp"});
-			});
-
-			$(".li11").mouseleave(function()
-			{
-				$(".anh11").attr({"src": "./img/anh21.webp"});
-			});
-			//12//
-			$(".li12").mouseenter(function()
-			{
-				$(".anh12").attr({"src": "./img/anh24.webp"});
-			});
-
-			$(".li12").mouseleave(function()
-			{
-				$(".anh12").attr({"src": "./img/anh23.webp"});
-			});		   
-		});
-	</script>
 
 <!--PHAN 4-->
 	<div id="content">
@@ -400,5 +279,471 @@
 		</div>
 	</div>
 
+
+<!--PHAN 6-->
+
+	<div id="goBar">
+		<div class="gobar">
+			<div class="our">			
+				<h5>Go Bar Gallery</h5>
+			</div>
+
+			<div class="thep">
+				<p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or<br> double click me to add your own content and make changes to the font.</p>
+			</div>
+		</div>
+
+		<div class="slideanh">
+			<div class="margintop">
+				<div>
+					<img src="./img/anh28.jpg">
+				</div>
+				<div>
+					<img src="./img/anh29.jpg">
+				</div>
+				<div>
+					<img src="./img/anh30.jpg">
+				</div>
+				<div>
+					<img src="./img/anh31.jpg">
+				</div>
+			</div>
+			
+			<div  class="marginbottom">
+				<div>
+					<img src="./img/anh32.jpg">
+				</div>
+				<div>
+					<img src="./img/anh33.jpg">
+				</div>
+				<div>
+					<img src="./img/anh34.jpg">
+				</div>
+				<div>
+					<img src="./img/anh35.jpg">
+				</div>
+			</div>					
+		</div>
+	</div>
+
+<!--HIEN THI PHAN SHOP-->
+	<div id="hienShop">
+		<div class="titleShop">
+			<h2>OUR BARS</h2>
+			<div class="centerThanhNgang">
+				<div class="thanhngang3"></div>
+			</div>
+			<p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or<br> double click me to add your own content and make changes to the font. </p>
+		</div>
+
+		<div class="showsp">
+			<ul>
+				<div class="showanh">
+					<li class="li13 leftImg">
+				    	<img src="./img/anh39.webp" class="anh13"/>
+				    	<div>
+				    		<p>I'm a Product</p>
+				    		<div>
+				    			<span>15₫</span>
+				    		</div>
+				    	</div>
+				    	<div class="hover2 hover3">QUICK VIEW</div>
+				    </li>
+				    <li class="li14">
+				    	<img src="./img/anh41.webp" class="anh14"/>
+				    	<div>
+				    		<p>I'm a Product</p>
+				    		<div>
+				    			<span>4₫</span>
+				    		</div>
+				    	</div>
+				    	<div class="hover2">QUICK VIEW</div>
+				    </li>    
+				    <li class="li15">
+				    	<img src="./img/anh43.webp" class="anh15"/>
+				    	<div>
+				    		<p>I'm a Product</p>
+				    		<div>
+				    			<span>15₫</span>
+				    		</div>
+				    		<div class="hover2">QUICK VIEW</div>
+				    	</div>
+				    </li>     
+				    <li class="li16">
+				    	<img src="./img/anh45.webp" class="anh16"/>
+				    	<div>
+				    		<p>I'm a Product</p>
+				    		<div>
+				    			<span>4₫</span>
+				    		</div>
+				    		<div class="hover2">QUICK VIEW</div>
+				    	</div>
+				    </li> 
+				</div> 
+
+			    <div class="showanh">
+				    <li class="li17 leftImg">
+				    	<img src="./img/anh47.webp" class="anh17"/>
+				    	<div>
+				    		<p>I'm a Product</p>
+				    		<div>
+				    			<span>15₫</span>
+				    		</div>
+				    		<div class="hover2 hover3">QUICK VIEW</div>
+				    	</div>
+				    </li>
+				    <li class="li18">
+				    	<img src="./img/anh49.webp" class="anh18"/>
+				    	<div>
+				    		<p>I'm a Product</p>
+				    		<div>
+				    			<span>4₫</span>
+				    		</div>
+				    		<div class="hover2">QUICK VIEW</div>
+				    	</div>
+				    </li>
+				    <li class="li19">
+				    	<img src="./img/anh51.webp" class="anh19"/>
+				    	<div>
+				    		<p>I'm a Product</p>
+				    		<div>
+				    			<span>15₫</span>
+				    		</div>
+				    		<div class="hover2">QUICK VIEW</div>
+				    	</div>
+				    </li>
+				    <li class="li20">
+				    	<img src="./img/anh53.webp" class="anh20"/>
+				    	<div>
+				    		<p>I'm a Product</p>
+				    		<div>
+				    			<span>4₫</span>
+				    		</div>
+				    		<div class="hover2">QUICK VIEW</div>
+				    	</div>
+				    </li>
+				</div>    	
+
+				<div class="showanh">
+				    <li class="li21 leftImg">
+				    	<img src="./img/anh55.webp" class="anh21"/>
+				    	<div>
+				    		<p>I'm a Product</p>
+				    		<div>
+				    			<span>15₫</span>
+				    		</div>
+				    		<div class="hover2 hover3">QUICK VIEW</div>
+				    	</div>
+				    </li>
+				    <li class="li22">
+				    	<img src="./img/anh57.webp" class="anh22"/>
+				    	<div>
+				    		<p>I'm a Product</p>
+				    		<div>
+				    			<span>4₫</span>
+				    		</div>
+				    		<div class="hover2">QUICK VIEW</div>
+				    	</div>
+				    </li>
+				    <li class="li23">
+				    	<img src="./img/anh59.webp" class="anh23"/>
+				    	<div>
+				    		<p>I'm a Product</p>
+				    		<div>
+				    			<span>15₫</span>
+				    		</div>
+				    		<div class="hover2">QUICK VIEW</div>
+				    	</div>
+				    </li>
+				    <li class="li24">
+				    	<img src="./img/anh61.webp" class="anh24"/>
+				    	<div>
+				    		<p>I'm a Product</p>
+				    		<div>
+				    			<span>4₫</span>
+				    		</div>
+				    		<div class="hover2">QUICK VIEW</div>
+				    	</div>
+				    </li>
+				</div>    
+			</ul>
+			<div class="clearout"></div> 
+
+			<script type="text/javascript">
+				// $(window).load(function() {
+			 //    		$("#flexiselDemo1").flexisel();
+			 //    		<script type="text/javascript">
+				$(window).load(function() {
+		    		$("#flexiselDemo1").flexisel();
+		    		//1//
+		    		$(".li1").mouseenter(function()
+					{
+						$(".anh1").attr({"src": "./img/anh2.webp"});
+					});
+
+					$(".li1").mouseleave(function()
+					{
+						$(".anh1").attr({"src": "./img/anh1.webp"});
+					});
+					//2//
+					$(".li2").mouseenter(function()
+					{
+						$(".anh2").attr({"src": "./img/anh4.webp"});
+					});
+
+					$(".li2").mouseleave(function()
+					{
+						$(".anh2").attr({"src": "./img/anh3.webp"});
+					});
+					//3//
+					$(".li3").mouseenter(function()
+					{
+						$(".anh3").attr({"src": "./img/anh6.webp"});
+					});
+
+					$(".li3").mouseleave(function()
+					{
+						$(".anh3").attr({"src": "./img/anh5.webp"});
+					});
+					//4//
+					$(".li4").mouseenter(function()
+					{
+						$(".anh4").attr({"src": "./img/anh8.webp"});
+					});
+
+					$(".li4").mouseleave(function()
+					{
+						$(".anh4").attr({"src": "./img/anh7.webp"});
+					});
+					//5//
+					$(".li5").mouseenter(function()
+					{
+						$(".anh5").attr({"src": "./img/anh10.webp"});
+					});
+
+					$(".li5").mouseleave(function()
+					{
+						$(".anh5").attr({"src": "./img/anh9.webp"});
+					});
+					//6//
+					$(".li6").mouseenter(function()
+					{
+						$(".anh6").attr({"src": "./img/anh12.webp"});
+					});
+
+					$(".li6").mouseleave(function()
+					{
+						$(".anh6").attr({"src": "./img/anh11.webp"});
+					});
+					//7//
+		    		$(".li7").mouseenter(function()
+					{
+						$(".anh7").attr({"src": "./img/anh14.webp"});
+					});
+
+					$(".li7").mouseleave(function()
+					{
+						$(".anh7").attr({"src": "./img/anh13.webp"});
+					});
+					//8//
+					$(".li8").mouseenter(function()
+					{
+						$(".anh8").attr({"src": "./img/anh16.webp"});
+					});
+
+					$(".li8").mouseleave(function()
+					{
+						$(".anh8").attr({"src": "./img/anh15.webp"});
+					});
+					//9//
+					$(".li9").mouseenter(function()
+					{
+						$(".anh9").attr({"src": "./img/anh18.webp"});
+					});
+
+					$(".li9").mouseleave(function()
+					{
+						$(".anh9").attr({"src": "./img/anh17.webp"});
+					});
+					//10//
+					$(".li10").mouseenter(function()
+					{
+						$(".anh10").attr({"src": "./img/anh20.webp"});
+					});
+
+					$(".li10").mouseleave(function()
+					{
+						$(".anh10").attr({"src": "./img/anh19.webp"});
+					});
+					//11//
+					$(".li11").mouseenter(function()
+					{
+						$(".anh11").attr({"src": "./img/anh22.webp"});
+					});
+
+					$(".li11").mouseleave(function()
+					{
+						$(".anh11").attr({"src": "./img/anh21.webp"});
+					});
+					//12//
+					$(".li12").mouseenter(function()
+					{
+						$(".anh12").attr({"src": "./img/anh24.webp"});
+					});
+
+					$(".li12").mouseleave(function()
+					{
+						$(".anh12").attr({"src": "./img/anh23.webp"});
+					});
+					//1//
+			    		$(".li13").mouseenter(function()
+						{
+							$(".anh13").attr({"src": "./img/anh40.webp"});
+						});
+
+						$(".li13").mouseleave(function()
+						{
+							$(".anh13").attr({"src": "./img/anh39.webp"});
+						});
+						//2//
+						$(".li14").mouseenter(function()
+						{
+							$(".anh14").attr({"src": "./img/anh42.webp"});
+						});
+
+						$(".li14").mouseleave(function()
+						{
+							$(".anh14").attr({"src": "./img/anh41.webp"});
+						});
+						//3//
+						$(".li15").mouseenter(function()
+						{
+							$(".anh15").attr({"src": "./img/anh44.webp"});
+						});
+
+						$(".li15").mouseleave(function()
+						{
+							$(".anh15").attr({"src": "./img/anh43.webp"});
+						});
+						//4//
+						$(".li16").mouseenter(function()
+						{
+							$(".anh16").attr({"src": "./img/anh46.webp"});
+						});
+
+						$(".li16").mouseleave(function()
+						{
+							$(".anh16").attr({"src": "./img/anh45.webp"});
+						});
+						//5//
+						$(".li17").mouseenter(function()
+						{
+							$(".anh17").attr({"src": "./img/anh48.webp"});
+						});
+
+						$(".li17").mouseleave(function()
+						{
+							$(".anh17").attr({"src": "./img/anh47.webp"});
+						});
+						//6//
+						$(".li18").mouseenter(function()
+						{
+							$(".anh18").attr({"src": "./img/anh50.webp"});
+						});
+
+						$(".li18").mouseleave(function()
+						{
+							$(".anh18").attr({"src": "./img/anh49.webp"});
+						});
+						//7//
+			    		$(".li19").mouseenter(function()
+						{
+							$(".anh19").attr({"src": "./img/anh52.webp"});
+						});
+
+						$(".li19").mouseleave(function()
+						{
+							$(".anh19").attr({"src": "./img/anh51.webp"});
+						});
+						//8//
+						$(".li20").mouseenter(function()
+						{
+							$(".anh20").attr({"src": "./img/anh54.webp"});
+						});
+
+						$(".li20").mouseleave(function()
+						{
+							$(".anh20").attr({"src": "./img/anh53.webp"});
+						});
+						//9//
+						$(".li21").mouseenter(function()
+						{
+							$(".anh21").attr({"src": "./img/anh56.webp"});
+						});
+
+						$(".li21").mouseleave(function()
+						{
+							$(".anh21").attr({"src": "./img/anh55.webp"});
+						});
+						//10//
+						$(".li22").mouseenter(function()
+						{
+							$(".anh22").attr({"src": "./img/anh58.webp"});
+						});
+
+						$(".li22").mouseleave(function()
+						{
+							$(".anh22").attr({"src": "./img/anh57.webp"});
+						});
+						//11//
+						$(".li23").mouseenter(function()
+						{
+							$(".anh23").attr({"src": "./img/anh60.webp"});
+						});
+
+						$(".li23").mouseleave(function()
+						{
+							$(".anh23").attr({"src": "./img/anh59.webp"});
+						});
+						//12//
+						$(".li24").mouseenter(function()
+						{
+							$(".anh24").attr({"src": "./img/anh62.webp"});
+						});
+
+						$(".li24").mouseleave(function()
+						{
+							$(".anh24").attr({"src": "./img/anh61.webp"});
+						});	   
+				});	   
+					// });
+			</script>  
+		</div>	
+	</div>	
+<!--PHAN 7-->
+	<div id="footter">
+		<div class="icon">
+			<p>Follow us on:</p>
+			<div>
+				<img src="./img/anh36.webp">
+				<img src="./img/anh37.webp">
+				<img src="./img/anh38.webp">
+			</div>
+		</div>
+
+		<div class="sub">
+			<p class="subThep">Subscribe to our newsletter  </p>
+			<div>
+				<input type="text" name="" aria-label="Email Address" placeholder="Email Addres">
+				<button>Subscribe Now</button>
+			</div>
+			<p class="bottomThep">© 2023 by Go Bar. Proudly created with Wix.com</p>
+		</div>
+
+		<div class="contact">
+			<p class="subThep">Contact Us:</p>
+			<span>123-456-7890  |  info@mysite.com</span>
+		</div>
+	</div>
 </body>
 </html>

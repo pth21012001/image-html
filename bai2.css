@@ -61,6 +61,10 @@ body {
 	background-color: #000000;
 }
 
+/*#demo {
+	animation: 3s;
+}*/
+
 /*PHAN 2*/
 
 #anh {
@@ -120,7 +124,7 @@ body {
 
 /*PHAN 3*/
 
-.slide2 {
+#slide2 {
 	text-align: center;
 	padding-top: 50px;
 }
@@ -145,9 +149,11 @@ body {
 	position: absolute;
 	top: 375px;
     left: 167px;
+	transform: translateY(-100%);
 }
 
 .li1:hover .hover {
+	transition-duration: 3s;
 	display: block;
 }.li2:hover .hover {
 	display: block;
@@ -364,4 +370,173 @@ body {
 
 .mid {
 	margin-left: 200px;
+}
+
+/*PHAN 6*/
+
+.gobar {
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.slideanh img {
+	height: 386px;
+    width: 386px;
+    /*margin-right: 14px;
+    margin-left: -5px;*/
+    margin-bottom: 14px;
+}
+
+/*.slideanh div {
+    display: inline-block;
+}*/
+
+.margintop, .marginbottom {
+	display: flex;
+	justify-content: space-between;
+}
+
+/*Phan 7*/
+#footter {
+	width: 980px;
+	margin: 0 auto;
+	padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub input {
+	width: 253.25px;
+    height: 41.91px;
+    margin-right: 7px;
+    padding: 8px;
+}
+
+.sub button {
+	height: 41.91px;
+	background-color: #000000;
+	color: white;
+	padding: 9px 24px;
+	border: 0px;
+}
+
+.bottomThep {
+	margin-top: 15px;
+	font-size: 13px;
+}
+
+.icon p {
+	font-family: avenir-lt-w01_85-heavy1475544,sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.sub p {
+	text-align: center;
+}
+
+.subThep {
+	font-family: avenir-lt-w01_85-heavy1475544,sans-serif;
+	 font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+}
+
+.contact span {
+    font-size: 13px;
+}
+
+/*HIEN SHOP*/
+ #hienShop {
+ 	display: none;
+    padding-top: 300px;
+    text-align: center;
+ }
+
+ .centerThanhNgang {
+ 	display: flex;
+ 	justify-content: center;
+ }
+
+ .showsp {
+ 	width: 1420px;
+    margin: 0 auto;
+ 	margin-top: 100px;
+ }
+
+ .showsp ul {
+ 	list-style: none;
+ }
+
+ .showsp li {
+ 	padding: 25px;
+ }
+
+.showanh {
+	display: flex;
+	justify-content: space-between;
+} 
+
+.leftImg {
+	padding-left: 0px !important;
+}
+
+.titleShop h2 {
+	font: normal normal normal 45px/1.4em futura-lt-w01-book,sans-serif;
+}
+
+.titleShop p {
+	font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,sans-serif
+}
+
+.thanhngang3 {
+	width: 20px;
+	height: 3px;
+	background-color: #000000;
+	margin-bottom: 24px;
+}
+
+.li13, .li14, .li15, .li16, .li17, .li18, .li19, .li20, .li21, .li22, .li23, .li24 {
+	font-size: 13px;
+	position: relative;
+}
+
+.hover2 {
+	display: none;
+	position: absolute;
+	top: 320px;
+    left: 144px;
+	transform: translateY(-100%);
+}
+
+.hover3 {
+	left: 119px;
+}
+
+.li13:hover .hover2 {
+	transition-duration: 3s;
+	display: block;
+}.li14:hover .hover2 {
+	display: block;
+}.li15:hover .hover2 {
+	display: block;
+}.li16:hover .hover2 {
+	display: block;
+}.li17:hover .hover2 {
+	display: block;
+}.li18:hover .hover2 {
+	display: block;
+}.li19:hover .hover2 {
+	display: block;
+}.li20:hover .hover2 {
+	display: block;
+}.li21:hover .hover2 {
+	display: block;
+}.li22:hover .hover2 {
+	display: block;
+}.li23:hover .hover2 {
+	display: block;
+}.li24:hover .hover2 {
+	display: block;
 }
