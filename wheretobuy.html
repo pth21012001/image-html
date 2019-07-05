@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Where to buy</title>
+	<link rel="stylesheet" type="text/css" href="bai2.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="bai2.js"></script>
+	<script type="text/javascript" src="hieuungHeader.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<style type="text/css">
+		.home, .shop, .about {
+			color: #000000;
+		}
+
+		.whereToBuy {
+			color: #F2D5CE;
+		}
+
+		.cuc1 {
+			display: inline-block;
+		}
+
+		.cuc2 {
+			display: inline-block;
+			padding-left: 50px;
+		}
+
+		.thePWheretobuy {
+			font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+			margin-left: 120px;
+		}
+
+		.anh67 {
+			z-index: 1;
+		}
+
+		#anh67 {
+			background-color: #f4ebe2;
+			z-index: 0;
+		}
+
+		.wheretobuy {
+			background-color: #f2d5ce;
+		}
+
+		.stockists {
+			padding-top: 310px;
+		}
+
+		.thanhngangWhere {
+			width: 160px;
+		    height: 1px;
+		    transform-origin: center 0.5px;
+		    background-color: #000000;
+		    margin-bottom: 20px;
+		    margin-top: 20px;
+		}
+
+		.thePWheretobuy p {
+			margin: 0;
+		    font-size: 13px;
+		    margin-top: 20px;
+		}
+
+		.ourWhere {
+			margin-bottom: -10px;
+		}
+
+		.paragraph {
+			font-size: 13px;
+			font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+		}
+
+		.thanhngang2 {
+			width: 30px;
+		}
+	</style>
+</head>
+<body>
+	<!--PHAN 1-->
+	<div id="container">
+		<div class="gobars">
+			<div class="title">
+				<a href="#demo" onclick="goBar()"><span>GO BARS</span></a>
+			</div>
+
+			<div class="menu">
+				<div><a href="bai2.html" class="home" onclick="goBar()">HOME</a></div>
+				<div><a href="shop.html" onclick="shop()" class="shop">SHOP</a></div>
+				<div><a href="about.html" onclick="about()" class="about">ABOUT</a></div>
+				<div><a href="wheretobuy.html" class="whereToBuy">WHERE TO BUY</a></div>
+				<div><a href="" class="gh">GH</a></div>
+			</div>
+		</div>	
+
+		<div id="carouselExampleInterval" class="carousel slide background" data-ride="carousel">
+		  <div class="carousel-inner">
+		    <div class="carousel-item active" data-interval="10000">
+		        <p class="d-block w-100 giua">TRY OUR NEWEST FLAVOR</p>
+		    </div>
+		    <div class="carousel-item" data-interval="2000">
+		    	<p class="d-block w-100 giua">FREE SHIPPING ON ORDERS OVER $40</p>
+		    </div>
+		    <div class="carousel-item">
+		     	 <p class="d-block w-100 giua">ORDER 2 BOXES AND SAVE $20</p>
+		    </div>
+		  </div>
+		</div>
+	</div>
+
+<!--ABOUT-->
+	<div class="about wheretobuy">
+		<div class="shopnow2 stockists">
+			<div>
+				<div class="eat">
+					<h2 class="ourWhere">OUR</h2>
+					<h2>STOCKISTS</h2>
+				</div>
+
+				<div class="thanhngang thanhngang2"></div>
+
+				<p class="paragraph">I'm a paragraph. Click here to add your own text and<br> edit me. I’m a great place for you to tell a story and<br> let your users know a little more about you.</p>
+			</div>
+
+			<div class="aboutThep thePWheretobuy">
+				<div class="cuc1">
+					<div>
+						<h6>Store name</h6>
+						<div>
+							<p>500 Terry Francois Street</p>
+							<p>San Francisco, CA 94158</p>
+						</div>
+						
+						<div>	
+							<p>Tel: 123-456-7890</p>
+							<p>info@mysite.com</p>
+						</div>
+
+						<div class="thanhngangWhere"></div>
+					</div>
+
+					<div>
+						<h6>Store name</h6>
+						<div>
+							<p>500 Terry Francois Street</p>
+							<p>San Francisco, CA 94158</p>
+						</div>
+						
+						<div>	
+							<p>Tel: 123-456-7890</p>
+							<p>info@mysite.com</p>
+						</div>
+
+						<div class="thanhngangWhere"></div>
+					</div>
+				</div>
+
+				<div class="cuc2">
+					<div>
+						<h6>Store name</h6>
+						<div>
+							<p>500 Terry Francois Street</p>
+							<p>San Francisco, CA 94158</p>
+						</div>
+						
+						<div>	
+							<p>Tel: 123-456-7890</p>
+							<p>info@mysite.com</p>
+						</div>
+
+						<div class="thanhngangWhere"></div>
+					</div>
+
+					<div>
+						<h6>Store name</h6>
+						<div>
+							<p>500 Terry Francois Street</p>
+							<p>San Francisco, CA 94158</p>
+						</div>
+						
+						<div>	
+							<p>Tel: 123-456-7890</p>
+							<p>info@mysite.com</p>
+						</div>
+
+						<div class="thanhngangWhere"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="anh67">
+		<div>
+			<img src="./img/anh67.webp" class="anh67">
+		</div>	
+	</div>
+		
+
+<!--PHAN 7-->
+	<div id="footter">
+		<div class="icon">
+			<p>Follow us on:</p>
+			<div>
+				<img src="./img/anh36.webp">
+				<img src="./img/anh37.webp">
+				<img src="./img/anh38.webp">
+			</div>
+		</div>
+
+		<div class="sub">
+			<p class="subThep">Subscribe to our newsletter  </p>
+			<div>
+				<input type="text" name="" aria-label="Email Address" placeholder="Email Addres">
+				<button>Subscribe Now</button>
+			</div>
+			<p class="bottomThep">© 2023 by Go Bar. Proudly created with Wix.com</p>
+		</div>
+
+		<div class="contact">
+			<p class="subThep">Contact Us:</p>
+			<span>123-456-7890  |  info@mysite.com</span>
+		</div>
+	</div>		
+</body>
+</html>

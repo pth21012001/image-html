@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+	<link rel="stylesheet" type="text/css" href="bai2.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="bai2.js"></script>
+	<script type="text/javascript" src="hieuungHeader.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<style type="text/css">
+		.home, .shop {
+			color: #000000;
+		}		
+
+		.about {
+			color: #F2D5CE;
+		}
+
+		.la1 {
+			position: absolute;
+			top: 30px;
+		    left: 440px;
+		    transform: rotate(103.805deg);
+		}
+
+		.la2 {
+			position: absolute;
+		    top: 481px;
+		    left: 200px;
+		    transform: rotate(230.058deg);
+		}
+
+		.duahau {
+			position: absolute;
+		    top: 300px;
+		    left: 50px;
+		    transform: rotate(348.348deg);
+		}
+
+		.chanh {
+			position: absolute;
+			top: 480px;
+		    left: 765px;
+		    transform: rotate(67.8243deg);
+		}
+	</style>
+</head>
+<body>
+	<!--PHAN 1-->
+	<div id="container">
+		<div class="gobars">
+			<div class="title">
+				<a href="#demo" onclick="goBar()"><span>GO BARS</span></a>
+			</div>
+
+			<div class="menu">
+				<div><a href="bai2.html" class="home" onclick="goBar()">HOME</a></div>
+				<div><a href="shop.html" onclick="shop()" class="shop">SHOP</a></div>
+				<div><a href="about.html" onclick="about()" class="about">ABOUT</a></div>
+				<div><a href="wheretobuy.html" class="whereToBuy">WHERE TO BUY</a></div>
+				<div><a href="" class="gh">GH</a></div>
+			</div>
+		</div>	
+
+		<div id="carouselExampleInterval" class="carousel slide background" data-ride="carousel">
+		  <div class="carousel-inner">
+		    <div class="carousel-item active" data-interval="10000">
+		        <p class="d-block w-100 giua">TRY OUR NEWEST FLAVOR</p>
+		    </div>
+		    <div class="carousel-item" data-interval="2000">
+		    	<p class="d-block w-100 giua">FREE SHIPPING ON ORDERS OVER $40</p>
+		    </div>
+		    <div class="carousel-item">
+		     	 <p class="d-block w-100 giua">ORDER 2 BOXES AND SAVE $20</p>
+		    </div>
+		  </div>
+		</div>
+	</div>
+
+<!--ABOUT-->
+	<div id="about">
+		<div class="aboutAnh">
+			<img src="./img/anh63.webp">
+		</div>
+
+		<div class="shopnow2">
+			<div>
+				<div class="eat">
+					<h2>WHO</h2>
+					<h2>WE ARE</h2>
+				</div>
+
+				<div class="thanhngang"></div>
+			</div>
+
+			<div class="aboutThep">
+				<p>
+					I'm a paragraph. Click here to add your own text and edit me.<br> It’s easy. Just click “Edit Text” or double click me to add your<br> own content and make changes to the font. Feel free to drag<br> and drop me anywhere you like on your page. I’m a great<br> place for you to tell a story and let your users know a little<br> more about you.
+				</p>
+
+				<p>
+					This is a great space to write long text about your company<br> and your services. You can use this space to go into a little<br> more detail about your company. Talk about your team and<br> what services you provide. Tell your visitors the story of how<br> you came up with the idea for your business and what makes<br> you different from your competitors. Make your company<br> stand out and show your visitors who you are. I'm a<br> paragraph. Click here to add your own text and edit me. It’s<br> easy. Just click “Edit Text” or double click me to add your<br> own content and make changes to the font. Feel free to drag<br> and drop me anywhere you like on your page.
+				</p>
+			</div>
+
+			<div class="la1">
+				<img src="./img/anh64.webp">
+			</div>
+
+			<div class="la2">
+				<img src="./img/anh64.webp">
+			</div>
+
+			<div class="duahau">
+				<img src="./img/anh65.webp">
+			</div>
+
+			<div class="chanh">
+				<img src="./img/anh66.webp">
+			</div>			
+		</div>
+	</div>
+
+<!--PHAN 7-->
+	<div id="footter">
+		<div class="icon">
+			<p>Follow us on:</p>
+			<div>
+				<img src="./img/anh36.webp">
+				<img src="./img/anh37.webp">
+				<img src="./img/anh38.webp">
+			</div>
+		</div>
+
+		<div class="sub">
+			<p class="subThep">Subscribe to our newsletter  </p>
+			<div>
+				<input type="text" name="" aria-label="Email Address" placeholder="Email Addres">
+				<button>Subscribe Now</button>
+			</div>
+			<p class="bottomThep">© 2023 by Go Bar. Proudly created with Wix.com</p>
+		</div>
+
+		<div class="contact">
+			<p class="subThep">Contact Us:</p>
+			<span>123-456-7890  |  info@mysite.com</span>
+		</div>
+	</div>		
+</body>
+</html>
