@@ -41,7 +41,7 @@ body {
 }
 
 .mgright {
-	margin-right: 50px;
+	margin-right: 60px;
 }
 
 .mggh {
@@ -583,3 +583,83 @@ body {
 	font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
 	line-height: 1.5em;
 }
+
+/*CHAT*/
+
+.chat {
+	background-color: black;
+	display: flex;
+    width: 336px;
+    height: 60px;
+    align-items: center;
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+}
+
+.letChat {
+	margin-left: 30px;
+    margin-right: 180px;
+}
+
+.letChat p {
+	color: white;
+    margin: 0;
+}
+
+.iconChat {
+	cursor: pointer;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+}
+
+.iconChat svg {
+	margin-right: 8px;
+    transform: rotate(180deg);
+}
+
+.iconChat:hover {
+	border-radius: 50%;
+    background-color: currentColor;
+}
+
+#drop {
+	color: white;
+}
+
+/*.choChat {
+	width: 336px;
+	height: 57px;
+	background-color: white;
+	display: none;
+}
+
+.bgXam {
+	background-color: gray;
+	width: 336px;
+	height: 36px;
+	display: none;
+}
+
+.bgXam {
+	background-color: gray;
+	width: 336px;
+	height: 36px;
+	display: none;
+}
+
+.bgXam2 {
+	background-color: gray;
+	width: 336px;
+	height: 186px;
+	display: none;
+}
+
+.bgXam3 {
+	background-color: gray;
+	width: 336px;
+	height: 260px;
+	display: none;
+}*/
