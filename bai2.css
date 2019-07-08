@@ -25,7 +25,8 @@ body {
 }
 
 .title {
-	font-size: 30px;
+	font-size: 25px;
+	font-family: "kieuchu1";
 }
 
 .title a:hover {
@@ -35,9 +36,9 @@ body {
 }
 
 .menu {
-	display: flex;
-    /*width: 500px;
-    justify-content: space-between;*/
+    display: flex;
+    font-size: 14px;
+    font-family: "kieuchu1";
 }
 
 .mgright {
@@ -81,7 +82,7 @@ body {
 
 #anh {
 	position: relative;
-	background-color: #f2d5ce;
+	background-color: #f4ebe2;
 	z-index: 0;
 }
 
@@ -93,13 +94,14 @@ body {
 
 .shopnow {
 	position: absolute;
-    top: 383px;
+    top: 354px;
     left: 301.5px;
 }
 
 .eat h2 {
 	font: normal normal normal 45px/1.4em futura-lt-w01-book,sans-serif;
-	font-family: futura-lt-w01-book, sans-serif;
+	/*font-family: futura-lt-w01-book, sans-serif;*/
+	font-family: "kieuchu1";
 }
 
 .button a {
@@ -111,6 +113,7 @@ body {
     justify-content: center;
 	color: #000000;
 	text-decoration: none;
+	font-family: "kieuchu3";
 }
 
 .button a:hover {
@@ -134,6 +137,7 @@ body {
 .noidung p {
 	font-size: 13px;
 	margin-bottom: 30px;
+	font-family: "kieuchu3";
 }
 
 /*PHAN 3*/
@@ -143,14 +147,15 @@ body {
 	padding-top: 50px;
 }
 
-.our {
+/*.our {
 	font: normal normal normal 25px/1.4em futura-lt-w01-book,sans-serif;
-}
+}*/
 
 .our h5 {
 	margin-top: 15px;
-    font-size: 23px;
+    font-size: 25px;
     margin-bottom: 10px;
+    font-family: "kieuchu1";
 }
 
 .li1, .li2, .li3, .li4, .li5, .li6, .li7, .li8, .li9, .li10, .li11, .li12 {
@@ -194,18 +199,30 @@ body {
 }
 
 .thep {
-	font-size: 13px;
+	/*font-size: 13px;*/
 	padding-top: 5px;
 }
 
 .thep p {
 	line-height: 23px;
+	font-size: 14px;
+    font-family: "kieuchu3";
 }
 
 #flexiselDemo1 {
 	display:none;
 	background-color: white;
 	padding: 10px;
+}
+
+#flexiselDemo1 span {
+	font-family: "kieuchu3";
+}
+
+#flexiselDemo1 p {
+	margin-bottom: 20px;
+    font-size: 14px;
+    font-family: "kieuchu3";
 }
 
 .nbs-flexisel-container {
@@ -330,6 +347,10 @@ body {
 	width: 540px;
 }
 
+.bgoder2 {
+	background-color: rgba(242, 213, 206, 1);
+}
+
 .oder2 {
 	background-color: rgba(244, 235, 226, 1);
 	width: 540px;
@@ -345,22 +366,15 @@ body {
     margin-top: 100px;
 }
 
-.eat h4 {
-	font: normal normal normal 45px/1.4em futura-lt-w01-book,sans-serif;
+.eat h4, .eat2 h4 {
 	margin-bottom: 35px;
+    font-size: 45px;
+    font-family: "kieuchu1";
 }
 
-.eat2 h4 {
-	font: normal normal normal 45px/1.4em futura-lt-w01-book,sans-serif;
-	margin-bottom: 35px;
-}
-
-.eat h5 {
-	font: normal normal normal 25px/1.4em futura-lt-w01-book,sans-serif;
-}
-
-.eat2 h5 {
-	font: normal normal normal 25px/1.4em futura-lt-w01-book,sans-serif;
+.eat h5, .eat2 h5 {
+	font-size: 25px;
+    font-family: "kieuchu1";
 }
 
 /*PHAN 5*/
@@ -378,7 +392,7 @@ body {
 .signup {
     position: absolute;
     top: 60px;
-    left: 545px;
+    left: 525px;
     text-align: center;
 }
 
@@ -426,6 +440,8 @@ body {
     height: 41.91px;
     margin-right: 7px;
     padding: 8px;
+    font-family: "kieuchu3";
+    font-size: 15px;
 }
 
 .sub button {
@@ -436,30 +452,36 @@ body {
 	border: 0px;
 }
 
-.bottomThep {
-	margin-top: 20px;
-	font-size: 13px;
+.icon, .contact {
+    margin-top: 20px;
 }
 
 .icon p {
-	font-family: avenir-lt-w01_85-heavy1475544,sans-serif;
+	font-family: "kieuchu4";
     font-weight: 700;
     font-size: 14px;
 }
 
 .sub p {
 	text-align: center;
+	margin-top: 20px;
 }
 
 .subThep {
-	font-family: avenir-lt-w01_85-heavy1475544,sans-serif;
+	font-family: "kieuchu4";
 	 font-weight: 700;
     font-size: 14px;
-    text-align: center;
+    text-align: right;
+}
+
+.bottomThep {
+	font-size: 13px;
+	font-family: "kieuchu3";
 }
 
 .contact span {
-    font-size: 13px;
+    font-size: 14px;
+    font-family: "kieuchu3";
 }
 
 /*HIEN SHOP*/
@@ -488,6 +510,16 @@ body {
  	padding: 25px;
  }
 
+.showsp p {
+	margin-bottom: 0px;
+    font-size: 16px;
+    font-family: "kieuchu3";
+}
+
+.showsp span {
+    font-family: "kieuchu3";
+}
+
 .showanh {
 	display: flex;
 	justify-content: space-between;
@@ -499,10 +531,12 @@ body {
 
 .titleShop h2 {
 	font: normal normal normal 45px/1.4em futura-lt-w01-book,sans-serif;
+	font-family: "kieuchu1";
 }
 
 .titleShop p {
-	font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,sans-serif
+	font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+	font-family: "kieuchu3";
 }
 
 .thanhngang3 {
@@ -581,7 +615,9 @@ body {
 
 .aboutThep p {
 	font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
-	line-height: 1.5em;
+    line-height: 1.5em;
+    font-family: "kieuchu3";
+    margin-bottom: 21px;
 }
 
 /*CHAT*/
@@ -628,3 +664,26 @@ body {
 #drop {
 	color: white;
 }
+
+/*KIEU CHU*/
+
+@font-face {
+	font-family: "kieuchu1";
+	src: url('kieuchu1.woff2');
+}
+
+@font-face {
+	font-family: "kieuchu2";
+	src: url('kieuchu2.woff');
+}
+
+@font-face {
+	font-family: "kieuchu3";
+	src: url('kieuchu3.woff2');
+}
+
+@font-face {
+	font-family: "kieuchu4";
+	src: url('kieuchu4.woff2');
+}
+
