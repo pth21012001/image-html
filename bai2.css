@@ -26,7 +26,7 @@ body {
 
 .title {
 	font-size: 25px;
-	font-family: "kieuchu1";
+	font-family: "futura-lt-w01-book";
 }
 
 .title a:hover {
@@ -38,7 +38,8 @@ body {
 .menu {
     display: flex;
     font-size: 14px;
-    font-family: "kieuchu1";
+    font-family: "futura-lt-w01-book";
+    align-items: center;
 }
 
 .mgright {
@@ -78,6 +79,15 @@ body {
 	width: 20px;
 }
 
+._1INsc._3KKRv {
+	fill:#968575
+}
+
+._1INsc {
+	fill:#FFFFFF;
+	font:normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+	font-size:50px;
+}
 /*PHAN 2*/
 
 #anh {
@@ -88,7 +98,7 @@ body {
 
 .img img {
 	width: 100%;
-	padding-top: 142px;
+	padding-top: 134px;
 	z-index: 1;
 }
 
@@ -99,9 +109,13 @@ body {
 }
 
 .eat h2 {
-	font: normal normal normal 45px/1.4em futura-lt-w01-book,sans-serif;
-	/*font-family: futura-lt-w01-book, sans-serif;*/
-	font-family: "kieuchu1";
+	font: normal normal normal 45px/1.4em futura-lt-w01-book,sans-serif;/*font-style 
+																		  font-variant
+																		  font-weight
+																		  font-size/line-height
+																		  font-family
+																		*/ 
+	font-family: "futura-lt-w01-book";
 }
 
 .button a {
@@ -113,7 +127,7 @@ body {
     justify-content: center;
 	color: #000000;
 	text-decoration: none;
-	font-family: "kieuchu3";
+	font-family: "avenir-lt-w01_35-light1475496";
 }
 
 .button a:hover {
@@ -131,13 +145,18 @@ body {
 }
 
 .noidung {
-	font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+	font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,sans-serif;/*font-style 
+																					  font-variant
+																					  font-weight
+																					  font-size/line-height
+																					  font-family
+																					*/
 }
 
 .noidung p {
 	font-size: 13px;
 	margin-bottom: 30px;
-	font-family: "kieuchu3";
+	font-family: "avenir-lt-w01_35-light1475496";
 }
 
 /*PHAN 3*/
@@ -147,15 +166,11 @@ body {
 	padding-top: 50px;
 }
 
-/*.our {
-	font: normal normal normal 25px/1.4em futura-lt-w01-book,sans-serif;
-}*/
-
 .our h5 {
 	margin-top: 15px;
     font-size: 25px;
     margin-bottom: 10px;
-    font-family: "kieuchu1";
+    font-family: "futura-lt-w01-book";
 }
 
 .li1, .li2, .li3, .li4, .li5, .li6, .li7, .li8, .li9, .li10, .li11, .li12 {
@@ -165,38 +180,74 @@ body {
 
 .hover {
 	display: none;
-	position: absolute;
-	top: 375px;
-    left: 167px;
-	transform: translateY(-100%);
+	width: 300px;
+	top: 308px;
+    position: absolute;
+    left: 57px;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    background: rgba(255, 255, 255, 0.75);
 }
 
-.li1:hover .hover {
-	transition-duration: 3s;
+#li1:hover .hover {
+    display: block;
+    animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li3:hover .hover {
 	display: block;
-}.li2:hover .hover {
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li5:hover .hover {
 	display: block;
-}.li3:hover .hover {
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li7:hover .hover {
 	display: block;
-}.li4:hover .hover {
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li9:hover .hover {
 	display: block;
-}.li5:hover .hover {
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li11:hover .hover {
 	display: block;
-}.li6:hover .hover {
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li13:hover .hover {
 	display: block;
-}.li7:hover .hover {
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li15:hover .hover {
 	display: block;
-}.li8:hover .hover {
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li17:hover .hover {
 	display: block;
-}.li9:hover .hover {
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li19:hover .hover {
 	display: block;
-}.li10:hover .hover {
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li21:hover .hover {
 	display: block;
-}.li11:hover .hover {
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li23:hover .hover {
 	display: block;
-}.li12:hover .hover {
-	display: block;
+	animation-name: slideshow;
+	animation-duration: 0.1s;
 }
+
+@keyframes slideshow {
+			from {
+				transform: translate3d(0,30%,0);
+			}
+
+			to {
+				transform: translate3d(0,0,0);
+			}
+		}
 
 .thep {
 	/*font-size: 13px;*/
@@ -206,7 +257,7 @@ body {
 .thep p {
 	line-height: 23px;
 	font-size: 14px;
-    font-family: "kieuchu3";
+    font-family: "avenir-lt-w01_35-light1475496";
 }
 
 #flexiselDemo1 {
@@ -216,19 +267,20 @@ body {
 }
 
 #flexiselDemo1 span {
-	font-family: "kieuchu3";
+	font-family: "avenir-lt-w01_35-light1475496";
 }
 
 #flexiselDemo1 p {
 	margin-bottom: 20px;
     font-size: 14px;
-    font-family: "kieuchu3";
+    font-family: "avenir-lt-w01_35-light1475496";
 }
 
 .nbs-flexisel-container {
     position:relative;
     max-width:100%;
 }
+
 .nbs-flexisel-ul {
     position:relative;
     width:99999px;
@@ -257,6 +309,7 @@ body {
     -webkit-border-radius:5px;  */
 }
 
+
 .nbs-flexisel-item {
     float:left;
     margin:0px;
@@ -265,6 +318,7 @@ body {
     position:relative;
     line-height:0px;
 }
+
 .nbs-flexisel-item img {
     max-width: 100%;
     cursor: pointer;
@@ -278,8 +332,8 @@ body {
 .nbs-flexisel-nav-right {
     padding:5px 10px;
     border-radius:15px;
-    -moz-border-radius:15px;
-    -webkit-border-radius:15px;      
+    /*-moz-border-radius:15px;
+    -webkit-border-radius:15px;  */    
     position: absolute;
     cursor: pointer;
     z-index: 4;
@@ -297,9 +351,9 @@ body {
     content: "<"
 }
 
-.nbs-flexisel-nav-left.disabled {
+/*.nbs-flexisel-nav-left.disabled {
     opacity: 0.4;
-}
+}*/
 
 .nbs-flexisel-nav-right {
     right: 5px;    
@@ -309,13 +363,18 @@ body {
     content: ">"
 }
 
-.nbs-flexisel-nav-right.disabled {
+/*.nbs-flexisel-nav-right.disabled {
     opacity: 0.4;
-}
+}*/
 
 .clearout {
 	height:20px;
 	clear:both;
+}
+
+.subLi img {
+	width: 346px;
+	height: 346px;
 }
 
 /*PHAN 4*/
@@ -324,19 +383,7 @@ body {
 	padding-top: 190px;
 	width: 1080px;
     margin: 0 auto;
-    /*display: flex;*/
 }
-
-/*.thanhngang2 {
-	width: 20px;
-	height: 5px;
-	background-color: #000000;
-	margin-bottom: 24px;
-}*/
-
-/*.imgright, .imgleft {
-	width: 540px;
-}*/
 
 .cuc1 {
 	display: flex;
@@ -369,12 +416,12 @@ body {
 .eat h4, .eat2 h4 {
 	margin-bottom: 35px;
     font-size: 45px;
-    font-family: "kieuchu1";
+    font-family: "futura-lt-w01-book";
 }
 
 .eat h5, .eat2 h5 {
 	font-size: 25px;
-    font-family: "kieuchu1";
+    font-family: "futura-lt-w01-book";
 }
 
 /*PHAN 5*/
@@ -411,18 +458,43 @@ body {
 .slideanh img {
 	height: 386px;
     width: 386px;
-    /*margin-right: 14px;
-    margin-left: -5px;*/
     margin-bottom: 14px;
 }
-
-/*.slideanh div {
-    display: inline-block;
-}*/
 
 .margintop, .marginbottom {
 	display: flex;
 	justify-content: space-between;
+}
+
+.hoverAnh {	
+    display: none;
+    margin-top: 2px;
+}
+
+.hoverImg:hover .hoverAnh{
+    background: rgba(0, 0, 0, 0.5);
+    transition-duration: 0.1s;
+    color: #ffffff;
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 386px;
+}
+
+.hoverImg {
+	position: relative;
+}
+
+.mgRightSvg {
+	margin-right: 4px;
+}
+
+.mgRight2 {
+	padding-right: 21px;
+	font-size: 20px;
 }
 
 /*Phan 7*/
@@ -440,7 +512,7 @@ body {
     height: 41.91px;
     margin-right: 7px;
     padding: 8px;
-    font-family: "kieuchu3";
+    font-family: "avenir-lt-w01_35-light1475496";
     font-size: 15px;
 }
 
@@ -457,7 +529,7 @@ body {
 }
 
 .icon p {
-	font-family: "kieuchu4";
+	font-family: "avenir-lt-w01_85-heavy1475544";
     font-weight: 700;
     font-size: 14px;
 }
@@ -468,7 +540,7 @@ body {
 }
 
 .subThep {
-	font-family: "kieuchu4";
+	font-family: "avenir-lt-w01_85-heavy1475544";
 	 font-weight: 700;
     font-size: 14px;
     text-align: right;
@@ -476,17 +548,20 @@ body {
 
 .bottomThep {
 	font-size: 13px;
-	font-family: "kieuchu3";
+	font-family: "avenir-lt-w01_35-light1475496";
 }
 
 .contact span {
     font-size: 14px;
-    font-family: "kieuchu3";
+    font-family: "avenir-lt-w01_35-light1475496";
+}
+
+.inputFootter {
+	outline: none;
 }
 
 /*HIEN SHOP*/
  #hienShop {
- 	/*display: none;*/
     padding-top: 300px;
     text-align: center;
  }
@@ -513,11 +588,11 @@ body {
 .showsp p {
 	margin-bottom: 0px;
     font-size: 16px;
-    font-family: "kieuchu3";
+    font-family: "avenir-lt-w01_35-light1475496";
 }
 
 .showsp span {
-    font-family: "kieuchu3";
+    font-family: "avenir-lt-w01_35-light1475496";
 }
 
 .showanh {
@@ -530,13 +605,23 @@ body {
 }
 
 .titleShop h2 {
-	font: normal normal normal 45px/1.4em futura-lt-w01-book,sans-serif;
-	font-family: "kieuchu1";
+	font: normal normal normal 45px/1.4em futura-lt-w01-book,sans-serif; /*font-style 
+																		  font-variant
+																		  font-weight
+																		  font-size/line-height
+																		  font-family
+																		 */
+	font-family: "futura-lt-w01-book";
 }
 
 .titleShop p {
-	font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
-	font-family: "kieuchu3";
+	font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,sans-serif; /*font-style 
+																					  font-variant
+																					  font-weight
+																					  font-size/line-height
+																					  font-family
+																					*/
+	font-family: "avenir-lt-w01_35-light1475496";
 }
 
 .thanhngang3 {
@@ -546,7 +631,7 @@ body {
 	margin-bottom: 24px;
 }
 
-.li13, .li14, .li15, .li16, .li17, .li18, .li19, .li20, .li21, .li22, .li23, .li24 {
+#li39, #li41, #li43, #li45, #li47, #li49, #li53, #li55, #li57, #li59, #li61, #li51 {
 	font-size: 13px;
 	position: relative;
 }
@@ -554,40 +639,67 @@ body {
 .hover2 {
 	display: none;
 	position: absolute;
-	top: 320px;
-    left: 144px;
-	transform: translateY(-100%);
+	top: 279px;
+    left: 1px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.75);
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 14px;
 }
 
 .hover3 {
-	left: 119px;
+	/*left: 119px;*/
 }
 
-.li13:hover .hover2 {
-	transition-duration: 3s;
+#li39:hover .hover2 {
 	display: block;
-}.li14:hover .hover2 {
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li41:hover .hover2 {
 	display: block;
-}.li15:hover .hover2 {
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li43:hover .hover2 {
 	display: block;
-}.li16:hover .hover2 {
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li45:hover .hover2 {
 	display: block;
-}.li17:hover .hover2 {
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li47:hover .hover2 {
 	display: block;
-}.li18:hover .hover2 {
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li49:hover .hover2 {
 	display: block;
-}.li19:hover .hover2 {
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li51:hover .hover2 {
 	display: block;
-}.li20:hover .hover2 {
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li53:hover .hover2 {
 	display: block;
-}.li21:hover .hover2 {
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li55:hover .hover2 {
 	display: block;
-}.li22:hover .hover2 {
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li57:hover .hover2 {
 	display: block;
-}.li23:hover .hover2 {
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li59:hover .hover2 {
 	display: block;
-}.li24:hover .hover2 {
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li61:hover .hover2 {
 	display: block;
+	animation-name: slideshow;
+	animation-duration: 0.1s;
 }
 
 /*ABOUT*/
@@ -614,15 +726,20 @@ body {
 }
 
 .aboutThep p {
-	font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+	font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,sans-serif; /*font-style 
+																					  font-variant
+																					  font-weight
+																					  font-size/line-height
+																					  font-family
+																					*/
     line-height: 1.5em;
-    font-family: "kieuchu3";
+    font-family: "avenir-lt-w01_35-light1475496";
     margin-bottom: 21px;
 }
 
 /*CHAT*/
 
-.chat {
+.anChat {
 	background-color: black;
 	display: flex;
     width: 336px;
@@ -661,29 +778,134 @@ body {
     background-color: currentColor;
 }
 
+
 #drop {
 	color: white;
+}
+
+.hienChat {
+	background-color: #e0e0e0;
+    width: 336px;
+    height: 539px;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+}
+
+.choChat {
+	position: absolute;
+    top: 17px;
+    right: 20px;
+    cursor: pointer;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+}
+
+#anThanhChat {
+	display: none;
+}
+
+.letChat2 {
+	color: white;
+    padding-top: 100px;
+    text-align: center;
+    background: black;
+    padding-bottom: 100px;
+}
+
+.hienLetChat {
+	position: absolute;
+    top: 17px;
+    color: white;
+    left: 20px;
+    display: none;
+}
+
+.bgLet {
+	background: black;
+    height: 60px;
+}
+
+.powered {
+	margin-top: 386px;
+    color: white;
+    height: 36px;
+   /* text-align: center;*/
+    background-color: #bbbbbb;
+    line-height: 36px;
+}
+
+.chatIcon {
+	height: 57px;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.widthIcon {
+    width: 296px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 57px;
+}
+
+/*.widthSubIcon:hover span {
+	font-size: 24px;
+}
+*/
+
+/*SUB ID ICON*/
+
+.powBy {
+	text-align: center;
+}
+
+.titleIcon {
+	display: flex;
+    justify-content: space-around;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.subIdIcon {
+	display: none;
+}
+
+.widthSubIcon {
+	font-size: 23px;
+	padding: 9px 0 9px 11px;
+}
+
+.widthSubIcon span {
+	margin-right: 9px;
+}
+
+.downIcon {
+	display: none;
 }
 
 /*KIEU CHU*/
 
 @font-face {
-	font-family: "kieuchu1";
+	font-family: "futura-lt-w01-book";
 	src: url('kieuchu1.woff2');
 }
 
-@font-face {
+/*@font-face {
 	font-family: "kieuchu2";
 	src: url('kieuchu2.woff');
-}
+}*/
 
 @font-face {
-	font-family: "kieuchu3";
+	font-family: "avenir-lt-w01_35-light1475496";
 	src: url('kieuchu3.woff2');
 }
 
 @font-face {
-	font-family: "kieuchu4";
+	font-family: "avenir-lt-w01_85-heavy1475544";
 	src: url('kieuchu4.woff2');
 }
 
