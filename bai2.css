@@ -377,6 +377,16 @@ body {
 	height: 346px;
 }
 
+.asubli {
+	text-decoration: none;
+	color: #212529;
+} 
+
+/*.asubli p, .asubli span {
+	color: #212529;
+	text-decoration: none;
+}*/
+
 /*PHAN 4*/
 
 #content {
@@ -885,6 +895,18 @@ body {
 
 .downIcon {
 	display: none;
+}
+
+.subIcon>div>.emoji {
+	display: inline-block;
+}
+
+.subIcon>div>.emoji:hover {
+	transform: scale(1.2);
+}
+
+.emoji 	{
+	cursor: pointer;
 }
 
 /*KIEU CHU*/

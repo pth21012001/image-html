@@ -95,13 +95,15 @@
 		<div>
 			<ul id="flexiselDemo1"> 
 			    <li class="subLi" id="li1">
-			    	<img src="./img/anh1.webp" class="anh1"/>
-			    	<div>
-			    		<p>I'm a Product</p>
-			    		<div>
-			    			<span>15₫</span>
-			    		</div>
-			    	</div>
+			    	<a href="sanPhamHome.html" class="asubli">
+			    		<img src="./img/anh1.webp" class="anh1"/>
+			    	</a>
+				    	<div>				    		
+				    		<p><a href="sanPhamHome.html" class="asubli">I'm a Product</a></p>
+				    		<div>
+				    			<span><a href="sanPhamHome.html" class="asubli">15₫</a></span>
+				    		</div>				    		
+				    	</div>			    	
 			    	<div class="hover">QUICK VIEW</div>
 			    </li>
 			    <li class="subLi" id="li3">
@@ -593,7 +595,7 @@
 
 							for(let i = 0; i < arr.length; i++)
 							{
-								str += '<span class="emoji" data-hook="emoji" data-unicode="1f600">&#'+ arr[i] + ';</span>';
+								str += '<span class="emoji">&#'+ arr[i] + ';</span>';
 							}
 
 							$(".widthSubIcon").html(str);
@@ -651,7 +653,7 @@
 							let str = "";
 							for(let i = 0; i < arr.length; i++)
 							{
-								str += '<span class="emoji" data-hook="emoji" data-unicode="1f600">&#'+ arr[i] + ';</span>';
+								str += '<span class="emoji">&#'+ arr[i] + ';</span>';
 							}
 
 							$(".widthSubIcon").html(str);
