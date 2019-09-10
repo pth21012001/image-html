@@ -4,6 +4,7 @@
 	<title>Bai 2</title>
 	<link rel="stylesheet" type="text/css" href="bai2.css">
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
 	<script type="text/javascript" src="bai2.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -55,15 +56,12 @@
 			width: 500px;
 		}
 
-		.image img {
-			border: 1px solid gray;
-		}
-
-		.image2 img {
+		.image {
 			border: 1px solid gray;
 		}
 
 		.image2 {
+			border: 1px solid gray;
 			display: none;
 		}
 
@@ -253,7 +251,25 @@
 
 		.iconproduct {
 			display: flex;
-		}		
+		}
+
+		.image {
+			/*display:inline-block;*/
+			position: relative;
+		}
+
+		/*.image img {
+			display: block;
+		}	*/
+
+		.image2 {
+			/*display:inline-block;*/
+			position: relative;
+		}
+
+		/*.image2 img {
+			display: block;
+		}		*/		
 	</style>
 </head>
 <body id="demo">
@@ -329,11 +345,11 @@
 			<div class="product">
 				<div class="productImg">
 					<div class="image">
-						<img src="./img/anh1.webp">
+						<img src="./img/anh68.webp" width="498" height="498">
 					</div>
 
 					<div class="image2">
-						<img src="./img/anh2.webp">
+						<img src="./img/anh69.png" width="498" height="498">
 					</div>
 
 					<div class="subimg">
@@ -360,19 +376,23 @@
 									{
 										$(".image").css({"display": "block"});
 										$(".image2").css({"display": "none"});
-										$(".subimg1 img").css({"border": "1px solid"});
-										$(".subimg2 img").css({"border": "2px solid"});
+										$(".subimg1 img").css({"border": "2px solid"});
+										$(".subimg2 img").css({"border": "1px solid"});
 									});
 
 								$(".subimg2").click(function()
 									{
 										$(".image").css({"display": "none"});
 										$(".image2").css({"display": "block"});
-										$(".subimg1 img").css({"border": "2px solid"});
-										$(".subimg2 img").css({"border": "1px solid"});
-									});							
+										$(".subimg1 img").css({"border": "1px solid"});
+										$(".subimg2 img").css({"border": "2px solid"});
+									});
+
+								// Zoom Image
+								$(".image, .image2").zoom();															
 							});
 					</script>	
+					<script type="text/javascript" src="zoomImg.js"></script>
 				</div>
 
 				<div class="infoProduct">
