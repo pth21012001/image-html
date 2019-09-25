@@ -271,12 +271,7 @@
 
 		/*.image2 img {
 			display: block;
-		}		*/
-
-		.prev {
-			color: #c1c1c1 !important;
-			cursor: context-menu;
-		}		
+		}		*/		
 	</style>
 </head>
 <body id="demo">
@@ -341,31 +336,31 @@
 				</nav>
 
 				<div>
-					<span><a href="" class="prev">< Prev</a></span>
+					<span><a href="sanPhamHome5.html">< Prev</a></span>
 
 					|
 
-					<span><a href="sanPhamHome2.html">Next ></a></span>
+					<span><a href="sanPhamHome7.html">Next ></a></span>
 				</div>	
 			</div>
 			
 			<div class="product">
 				<div class="productImg">
 					<div class="image">
-						<img src="./img/anh1.webp" width="498" height="498">
+						<img src="./img/anh11.webp" width="498" height="498">
 					</div>
 
 					<div class="image2">
-						<img src="./img/anh2.webp" width="498" height="498">
+						<img src="./img/anh12.webp" width="498" height="498">
 					</div>
 
 					<div class="subimg">
 						<div class="subimg1">
-							<img src="./img/anh39.webp">
+							<img src="./img/anh49.webp">
 						</div>
 
 						<div class="subimg2">
-							<img src="./img/anh40.webp">
+							<img src="./img/anh50.webp">
 						</div>
 					</div>
 
@@ -412,7 +407,7 @@
 					</div>
 
 					<div class="moneyproduct">
-						<span>15₫</span>
+						<span>4₫</span>
 					</div>
 
 					<div class="numberproduct">
@@ -773,11 +768,7 @@
 				<div class="chatIcon">
 					<div class="widthIcon">
 						<div class="matcuoi">
-							<svg viewBox="0 0 20 20" fill="currentColor" width="20px" height="20px" style="cursor: pointer;">	<g id="Layer_2">
-									<path d="M10,0a10,10,0,1,0,9.85,8.26A10,10,0,0,0,10,0Zm0,19A9,9,0,1,1,18.87,8.44,9.11,9.11,0,0,1,19,10,9,9,0,0,1,10,19Zm4.23-6.88a4.5,4.5,0,0,1-8.72,0l1-.25a3.5,3.5,0,0,0,6.78,0ZM8,8A1,1,0,1,1,7,7,1,1,0,0,1,8,8Zm6,0a1,1,0,1,1-1-1A1,1,0,0,1,14,8Z" id="Layer_1-2">	
-									</path>
-								</g>
-							</svg>
+							<svg viewBox="0 0 20 20" fill="currentColor" width="20px" height="20px" style="cursor: pointer;"><g id="Layer_2"><path d="M10,0a10,10,0,1,0,9.85,8.26A10,10,0,0,0,10,0Zm0,19A9,9,0,1,1,18.87,8.44,9.11,9.11,0,0,1,19,10,9,9,0,0,1,10,19Zm4.23-6.88a4.5,4.5,0,0,1-8.72,0l1-.25a3.5,3.5,0,0,0,6.78,0ZM8,8A1,1,0,1,1,7,7,1,1,0,0,1,8,8Zm6,0a1,1,0,1,1-1-1A1,1,0,0,1,14,8Z" id="Layer_1-2"></path></g></svg>
 						</div>
 
 						<div class="downIcon">							
@@ -813,97 +804,96 @@
 		</div>
 	</div>
 
-	<script type="text/javascript">
-		$(document).ready(function()
-		{
-			//HIEU UNG MUI TEN BAM LEN XUONG
-			$(".iconChat").click(function()
-				{
-					$("#hienThanhChat").css({"display":"none"});
-					$("#anThanhChat").css({"display":"block"});
-					$(".hienChat").css({"animation-name": "abc","animation-duration": "0.4s"});
-					$(".letChat2").css({"display":"block"});
-					$(".hienLetChat").css({"display":"none"});
-					$(".subIdIcon").css({"display" : "none"});	
-					$(".powered").css({"height": "36px","margin-top": "386px"});
-					$(".matcuoi").css({"display": "block"});
-					$(".downIcon").css({"display": "none"});		
-				});
+		<script type="text/javascript">
+			$(document).ready(function()
+			{
+				//HIEU UNG MUI TEN BAM LEN XUONG
+				$(".iconChat").click(function()
+					{
+						$("#hienThanhChat").css({"display":"none"});
+						$("#anThanhChat").css({"display":"block"});
+						$(".hienChat").css({"animation-name": "abc","animation-duration": "0.4s"});
+						$(".letChat2").css({"display":"block"});
+						$(".hienLetChat").css({"display":"none"});
+						$(".subIdIcon").css({"display" : "none"});	
+						$(".powered").css({"height": "36px","margin-top": "386px"});
+						$(".matcuoi").css({"display": "block"});
+						$(".downIcon").css({"display": "none"});		
+					});
 
-			$(".choChat").click(function()
-				{
-					$(".hienChat").css({"animation-name": "def","animation-duration": "0.4s"});
+				$(".choChat").click(function()
+					{
+						$(".hienChat").css({"animation-name": "def","animation-duration": "0.4s"});
 
-					setTimeout(function(){
-						$("#anThanhChat").css({"display":"none"});
-					},400);
-						$("#hienThanhChat").css({"display":"block"});
-				});	
+						setTimeout(function(){
+							$("#anThanhChat").css({"display":"none"});
+						},400);
+							$("#hienThanhChat").css({"display":"block"});
+					});	
 
-			//HIEU UNG LET"S CHAT
-				
-			$(".letChat2").click(function()
-				{
-					$(".letChat2").slideUp(300);
-					$(".hienLetChat").css({"display" : "block"});
-				});	
+				//HIEU UNG LET"S CHAT
+					
+				$(".letChat2").click(function()
+					{
+						$(".letChat2").slideUp(300);
+						$(".hienLetChat").css({"display" : "block"});
+					});	
 
-			$(".hienLetChat").click(function()
-				{
-					$(".letChat2").slideDown(300);
-					$(".hienLetChat").css({"display" : "none"});
-					$(".subIdIcon").css({"display" : "none"});
-					$(".powered").css({"height": "36px","margin-top": "386px"});
-					$(".downIcon").css({"display": "none"});
-					$(".matcuoi").css({"display": "block"});
-				});
+				$(".hienLetChat").click(function()
+					{
+						$(".letChat2").slideDown(300);
+						$(".hienLetChat").css({"display" : "none"});
+						$(".subIdIcon").css({"display" : "none"});
+						$(".powered").css({"height": "36px","margin-top": "386px"});
+						$(".downIcon").css({"display": "none"});
+						$(".matcuoi").css({"display": "block"});
+					});
 
-			//TAG TEXTAREA
-			$("._2Tg2y").focus(function()
-				{
-					$(this).css({"outline": "none"}); // outline bo border khi click vao
-				});
+				//TAG TEXTAREA
+				$("._2Tg2y").focus(function()
+					{
+						$(this).css({"outline": "none"}); // outline bo border khi click vao
+					});
 
-			//SUB ID ICON
-			$(".matcuoi").click(function()
-				{
-					$(".subIdIcon").css({"display" : "block","background-color": "white"});
-					$(".powered").css({"height": "179px","margin-top": "243px"});
-					$(".letChat2").slideUp(300);
-					$(".hienLetChat").css({"display" : "block"});
-					$(".downIcon").css({"display": "block"});
-					$(".matcuoi").css({"display": "none"});
-				});
+				//SUB ID ICON
+				$(".matcuoi").click(function()
+					{
+						$(".subIdIcon").css({"display" : "block","background-color": "white"});
+						$(".powered").css({"height": "179px","margin-top": "243px"});
+						$(".letChat2").slideUp(300);
+						$(".hienLetChat").css({"display" : "block"});
+						$(".downIcon").css({"display": "block"});
+						$(".matcuoi").css({"display": "none"});
+					});
 
-			$(".downIcon").click(function()
-				{
-					$(".downIcon").css({"display": "none"});
-					$(".matcuoi").css({"display": "block"});
-					$(".subIdIcon").css({"display" : "none"});
-					$(".powered").css({"height": "36px","margin-top": "386px"});
-				});		
-		});
-	</script>	
+				$(".downIcon").click(function()
+					{
+						$(".downIcon").css({"display": "none"});
+						$(".matcuoi").css({"display": "block"});
+						$(".subIdIcon").css({"display" : "none"});
+						$(".powered").css({"height": "36px","margin-top": "386px"});
+					});		
+			});
+		</script>	
 
-	<style type="text/css">
-		@keyframes abc {
-			from {
-				transform: translate3d(0,100%,0);
+		<style type="text/css">
+			@keyframes abc {
+				from {
+					transform: translate3d(0,100%,0);
+				}
+
+				to {
+					transform: translate3d(0,0,0);
+				}
 			}
 
-			to {
-				transform: translate3d(0,0,0);
-			}
-		}
+			@keyframes def {
+				from {
+					transform: translate3d(0,0,0);
+				}
 
-		@keyframes def {
-			from {
-				transform: translate3d(0,0,0);
+				to {
+					transform: translate3d(0,90%,0);
+				}
 			}
-
-			to {
-				transform: translate3d(0,90%,0);
-			}
-		}
-	</style>
-</body>		
+		</style>	

@@ -1,8 +1,3 @@
-/*!
-	Zoom 1.7.21
-	license: MIT
-	http://www.jacklmoore.com/zoom
-*/
 (function ($) {
 	var defaults = {
 		url: false,
@@ -29,25 +24,22 @@
 			position = $target.css('position'),
 			$source = $(source);
 
-		// The parent element needs positioning so that the zoomed element can be correctly positioned within.
-		target.style.position = /(absolute|fixed)/.test(position) ? position : 'relative';
 		target.style.overflow = 'hidden';
-		img.style.width = img.style.height = '';
 
 		$(img)
-			.addClass('zoomImg')
+			// .addClass('zoomImg')
 			.css({
 				position: 'absolute',
 				top: 0,
 				left: 0,
 				opacity: 0,
-				width: img.width /1.5,
-				height: img.height /1.5 ,
+				width: img.width *3.013,
+				height: img.height *3.013,
 				border: 'none',
 				maxWidth: 'none',
 				maxHeight: 'none'
 			})
-			.appendTo(target);
+			.appendTo(target); // Chèn nội dung thành phần đã có
 
 		return {
 			init: function() {
@@ -141,18 +133,9 @@
 						.on('mouseleave.zoom', stop)
 						.on(mousemove, zoom.move);
 				}
-
-				// Touch fallback				
-				if ($.isFunction(settings.callback)) {
-					settings.callback.call(img);
-				}
 			};
 
-			img.setAttribute('role', 'presentation');
-			img.alt = '';
 			img.src = settings.url;
 		});
 	};
-
-	$.fn.zoom.defaults = defaults;
 }(window.jQuery));
